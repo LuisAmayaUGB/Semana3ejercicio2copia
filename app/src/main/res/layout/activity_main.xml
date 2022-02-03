@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/temaBoton"
     tools:context=".MainActivity">
-
 
 
     <EditText
@@ -36,12 +36,14 @@
 
     <Button
         android:id="@+id/btnsumar"
-        android:layout_width="232dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="127dp"
+        android:layout_width="234dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="132dp"
         android:onClick="sumando"
         android:text="Sumar"
+        style="@style/temaBoton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/edtnum2" />
 
@@ -51,6 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
         android:text="TextView"
+        style="@style/CustomFontStyle"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,6 +69,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtVer" />
+
+    <ImageButton
+        android:id="@+id/botonImage"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="37dp"
+        android:onClick="sumando"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/edtnum1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dos" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
